@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/gradiant_background"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/welcome"
+        android:textColor="@color/white"
+        />
+
+    <RadioGroup
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RG_Computer_human">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer"
+            android:id="@+id/RB_Computer"
+            android:textColor="@color/white"
+            app:buttonTint="@color/white"
+            android:textSize="17dp"
+            android:layout_marginRight="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Human"
+            android:checked="true"
+            android:id="@+id/RB_Human"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:buttonTint="@color/white"/>
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RG_X_O"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/RB_X"
+            android:textColor="@color/white"
+            app:buttonTint="@color/white"
+            android:textSize="17dp"
+            android:layout_marginRight="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:checked="true"
+            android:id="@+id/RB_O"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:buttonTint="@color/white"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="resume game"
+        android:visibility="visible"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:id="@+id/BT_resume_game"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="New game"
+        android:textColor="@color/black"
+        android:id="@+id/BT_new_game"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Show game history"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:id="@+id/BT_show_game_history"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="delete history(debug)"
+        android:visibility="gone"
+        android:id="@+id/BT_delete_history"/>
+
+</LinearLayout>

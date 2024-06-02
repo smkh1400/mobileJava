@@ -1,0 +1,5 @@
+What is the best move in this formation of 3 by 3 tic tac toe for O?
+X _ _
+_ O X
+_ _ _
+The underline represents the empty space

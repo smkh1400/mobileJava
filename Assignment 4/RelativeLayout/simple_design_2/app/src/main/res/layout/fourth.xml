@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/rectangle"
+        android:layout_centerInParent="true"
+        android:id="@+id/BT_center"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/rectangle"
+        android:layout_above="@id/BT_center"
+        android:layout_alignRight="@+id/BT_center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/rectangle"
+        android:layout_toRightOf="@id/BT_center"
+        android:layout_alignTop="@+id/BT_center"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/rectangle"
+        android:layout_toLeftOf="@id/BT_center"
+        android:layout_alignTop="@+id/BT_center"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/rectangle"
+        android:layout_below="@id/BT_center"
+        android:layout_alignRight="@+id/BT_center"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

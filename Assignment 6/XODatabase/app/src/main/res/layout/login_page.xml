@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edit_text"
+        android:drawableStart="@drawable/username"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        android:hint="username"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@null" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_edit_text"
+        android:drawableStart="@drawable/password"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:padding="12dp"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@null" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Sign up?"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/deleteGameStates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="deleteAllGameStates(debug)"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="something"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/TV_turn"
+        android:layout_above="@id/RL_board"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/RL_board"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <View
+            android:layout_width="9dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="94dp"
+            android:background="@drawable/round_box" />
+        <View
+            android:layout_width="9dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_box"
+            android:layout_marginRight="94dp"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="94dp"
+            android:background="@drawable/round_box" />
+        <View
+            android:layout_width="280dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="94dp"
+            android:background="@drawable/round_box"
+            android:layout_alignParentBottom="true"/>
+
+        <View
+            android:id="@+id/x_1"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:id="@+id/x_2"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/x_3"/>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:id="@+id/x_4"/>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:id="@+id/x_5"/>
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:id="@+id/x_6"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/x_7"/>
+
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:id="@+id/x_8"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/x_9"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:layout_below="@id/RL_board"
+        android:layout_centerInParent="true"
+        android:id="@+id/BT_reset"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+What is the best move in this formation of 5 by 5 tic tac toe for O?
+X O _ _ _
+O X X _ _
+_ O _ _ _
+_ _ _ O _
+_ _ _ _ X
+The underline represents the empty spaceB

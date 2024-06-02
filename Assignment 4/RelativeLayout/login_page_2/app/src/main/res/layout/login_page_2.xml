@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/TV_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_above="@id/RL"
+        android:layout_marginBottom="40dp"
+        android:layout_centerInParent="true"
+        android:text="Welcome!" />
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RL"
+        android:background="@drawable/round_box"
+        android:padding="20dp">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:id="@+id/TV_username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="Type your username here"
+            android:layout_below="@+id/TV_username"
+            android:id="@+id/ET_username"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:layout_below="@+id/ET_username"
+            android:layout_marginTop="30dp"
+            android:id="@+id/TV_password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="Type your password here"
+            android:layout_below="@+id/TV_password"
+            android:id="@+id/ET_password"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ET_password"
+            android:text="forget password?"
+            android:id="@+id/TV_forget"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TV_forget"
+            android:layout_marginTop="10dp"
+            android:id="@+id/BT_login"
+            android:text="Login"
+            android:backgroundTint="@android:color/holo_orange_dark"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

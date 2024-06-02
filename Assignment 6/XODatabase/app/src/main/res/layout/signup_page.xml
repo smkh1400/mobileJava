@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_background"
+    tools:context=".SignupActivity"
+    android:padding="30dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/round_edit_text"
+        android:padding="12dp"
+        android:drawableStart="@drawable/username"
+        android:textColor="@color/white"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/round_edit_text"
+        android:padding="12dp"
+        android:drawableStart="@drawable/password"
+        android:textColor="@color/white"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nickname"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/round_edit_text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:drawablePadding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/haveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Register"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deleteALL(debug)"
+        android:id="@+id/deleteALL_BT"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
